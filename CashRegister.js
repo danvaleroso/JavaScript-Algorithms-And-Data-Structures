@@ -41,8 +41,7 @@ function checkCashRegister(price, cash, cid) {
     }
   }
   
-  //if change is equal to zero it means ,change amount is reached.
-  
+  //if change is equal to zero it means that change amount is reached.
   if(change === 0){
     if(cid.map(item => item[1]).reduce((a,b) => a+b) > 0){
       return {status: "OPEN", change: changeDenomination};
